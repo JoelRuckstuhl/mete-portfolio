@@ -16,6 +16,7 @@ export default async function IndexPage() {
         <h1 className="text-4xl font-bold tracking-tighter">Events</h1>
         <ul className="grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div> {events[0].Name}</div>
+          <div>mete</div>
         </ul>
       </main>
     </>
