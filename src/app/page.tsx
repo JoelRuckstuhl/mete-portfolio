@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { defineQuery } from "next-sanity";
 import { sanityFetch } from "@/sanity/live";
+import { Header } from "@/components/Header";
 
 const EVENTS_QUERY = defineQuery(`*[
   _type == "event"
@@ -12,6 +12,7 @@ export default async function IndexPage() {
 
   return (
     <>
+      <Header />
       <main className="flex bg-gray-100 min-h-screen flex-col p-24 gap-12">
         <h1 className="text-4xl font-bold tracking-tighter">Events</h1>
         <ul className="grid grid-cols-1 gap-12 lg:grid-cols-2">
